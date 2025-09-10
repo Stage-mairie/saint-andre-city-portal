@@ -1,0 +1,83 @@
+<!-- Réalisé par MALBROUCK Bradley et MALBROUCK Seedjye-->
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portail - Ville de Saint-André</title>
+    <link rel="stylesheet" href="ressources/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9fcd529bf5.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Bouton d'ouverture (en haut à droite) -->
+    <button id="menu-btn" onclick="toggleSidebar()">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+      <div class="sidebar-header">
+        <h3>Applications</h3>
+        <button id="close-btn" onclick="toggleSidebar()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <a href="https://msamail.saint-andre.re/#1" target="_blank"><i class="fas fa-envelope"></i> Zimbra</a>
+      <a href="https://glpiinfo.saint-andre.re/" target="_blank"><i class="fas fa-tools"></i> GLPI Info</a>
+      <a href="https://iparapheur.saint-andre.re/iparapheur/" target="_blank"><i class="fas fa-landmark"></i> iParapheur</a>
+      <a href="http://s-cindoc.saint-andre.re/docflow/" target="_blank"><i class="fas fa-th"></i> CinDoc-Mairie</a>
+    </div>
+
+    <div id="main-content">
+      <header class="classy-header">
+        <img src="assets/logo.png" alt="Logo de la ville de Saint-André" class="logo-ville" />
+        <div class="header-text">
+          <h1>Ville de Saint-André</h1>
+          <p>Portail d'accès aux services numériques</p>
+          <hr class="header-line" />
+        </div>
+      </header>
+
+      <div id="container">
+        <a href="http://www.saint-andre.re/" title="Site de la ville">
+          <div class="card">
+            <img src="assets/logo.png" alt="Site de la ville" class="card-img" />
+            <h2 class="label_txt">Site de la ville</h2>
+          </div>
+        </a>
+
+        <a href="http://intranet2.saint-andre.re/" title="Site intranet">
+          <div class="card">
+            <img src="assets/logo_intra.jpg" alt="Intranet" class="card-img" />
+            <h2 class="label_txt">Intranet</h2>
+          </div>
+        </a>
+
+        <a href="https://e-rh-st-andre.kelio.io/open/login" title="Badgeuse">
+          <div class="card">
+            <img src="assets/kelio.png" alt="Badgeuse Kelio" class="card-img" />
+            <h2 class="label_txt">Badgeuse</h2>
+          </div>
+        </a>
+
+        <a href="http://intranet2.saint-andre.re/index.php/applications/" title="Applications">
+          <div class="card">
+            <img src="assets/applications.png" alt="Applications" class="card-img" />
+            <h2 class="label_txt">Applications</h2>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div id="copyright">
+      <h2 id="copyright">Copyright © 2025 - Mairie de Saint-André</h2>
+    </div>
+
+    <div id="news-ticker">
+      <div id="ticker-content">Chargement des actualités...</div>
+    </div>
+
+    <script src="ressources/script.js"></script>
+  </body>
+</html>
