@@ -5,11 +5,14 @@ The portal is lightweight, fully static (HTML/CSS/JS), and styled with the **Man
 
 ## Project Structure
 
+```
 saint-andre-city-portal/
 │── assets/        # Logos, icons, and images
 │── Manrope/       # Local Manrope font files (fallback to Google Fonts)
 │── ressources/    # Stylesheets and scripts (style.css, script.js, etc.)
 │── index.html     # Main entry point of the portal
+
+```
 
 ## Features
 
