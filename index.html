@@ -1,83 +1,103 @@
-<!-- Réalisé par MALBROUCK Bradley et MALBROUCK Seedjye-->
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portail - Ville de Saint-André</title>
-    <link rel="stylesheet" href="ressources/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/9fcd529bf5.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <!-- Bouton d'ouverture (en haut à droite) -->
-    <button id="menu-btn" onclick="toggleSidebar()">
-      <i class="fas fa-bars"></i>
-    </button>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portail Ville de Saint-André</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/favicon_standre.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+<body>
 
-    <!-- Sidebar -->
-    <div id="sidebar">
-      <div class="sidebar-header">
-        <h3>Applications</h3>
-        <button id="close-btn" onclick="toggleSidebar()">
-          <i class="fas fa-times"></i>
+  <!-- Sidebar -->
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+      <h3>Applications</h3>
+      <div class="sidebar-line"></div>
+    </div>
+    <nav class="sidebar-links">
+      <a href="https://msamail.saint-andre.re/#1" target="_blank">
+        <img src="assets/zimbra_logo.png" alt="Zimbra" class="sidebar-icon">
+        <span>Zimbra</span>
+      </a>
+      <a href="https://glpiinfo.saint-andre.re/" target="_blank">
+        <img src="assets/glpi_info_logo.png" alt="GLPI_info" class="sidebar-icon">
+        <span>GLPI Info</span>
+      </a>
+      <a href="http://glpitech.saint-andre.re/" target="_blank">
+        <img src="assets/glpi_tech_logo.png" alt="GLPI_tech" class="sidebar-icon">
+        <span>GLPI Tech</span>
+      </a>
+      <a href="https://iparapheur.saint-andre.re/iparapheur/" target="_blank">
+        <img src="assets/iparapheur_logo.png" alt="Iparapheur" class="sidebar-icon">
+        <span>iParapheur</span>
+      </a>
+      <a href="http://s-cindoc.saint-andre.re/docflow/" target="_blank">
+        <img src="assets/cindoc_logo.png" alt="Cindoc" class="sidebar-icon">
+        <span>CinDoc-Mairie</span>
+      </a>
+    </nav>
+  </aside>
+  <div id="overlay" class="overlay"></div>
+
+  <!-- Contenu principal -->
+  <main>
+    <header class="header">
+      <div class="header-left">
+        <img src="assets/logo.png" alt="Logo Ville de Saint-André" class="logo">
+      </div>
+
+      <div class="header-center">
+        <h1>Ville de Saint-André</h1>
+        <p>Portail des services numériques</p>
+        <div id="date-time" class="date-time"></div>
+      </div>
+
+      <div class="header-right">
+        <button id="menu-btn" class="menu-btn">
+          <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <line x1="4" y1="6" x2="20" y2="6"/>
+            <line x1="4" y1="12" x2="20" y2="12"/>
+            <line x1="4" y1="18" x2="20" y2="18"/>
+          </svg>
         </button>
       </div>
-      <a href="https://msamail.saint-andre.re/#1" target="_blank"><i class="fas fa-envelope"></i> Zimbra</a>
-      <a href="https://glpiinfo.saint-andre.re/" target="_blank"><i class="fas fa-tools"></i> GLPI Info</a>
-      <a href="https://iparapheur.saint-andre.re/iparapheur/" target="_blank"><i class="fas fa-landmark"></i> iParapheur</a>
-      <a href="http://s-cindoc.saint-andre.re/docflow/" target="_blank"><i class="fas fa-th"></i> CinDoc-Mairie</a>
-    </div>
+    </header>
 
-    <div id="main-content">
-      <header class="classy-header">
-        <img src="assets/logo.png" alt="Logo de la ville de Saint-André" class="logo-ville" />
-        <div class="header-text">
-          <h1>Ville de Saint-André</h1>
-          <p>Portail d'accès aux services numériques</p>
-          <hr class="header-line" />
-        </div>
-      </header>
+    <!-- Grille de services -->
+    <section class="services">
+      <a href="http://www.saint-andre.re/" target="_blank" class="card">
+        <img src="assets/logo.png" alt="Site de la ville">
+        <h3>Site de la ville</h3>
+      </a>
 
-      <div id="container">
-        <a href="http://www.saint-andre.re/" title="Site de la ville">
-          <div class="card">
-            <img src="assets/logo.png" alt="Site de la ville" class="card-img" />
-            <h2 class="label_txt">Site de la ville</h2>
-          </div>
-        </a>
+      <a href="http://intranet2.saint-andre.re/" target="_blank" class="card">
+        <img src="assets/logo_intra.jpg" alt="Intranet">
+        <h3>Intranet</h3>
+      </a>
 
-        <a href="http://intranet2.saint-andre.re/" title="Site intranet">
-          <div class="card">
-            <img src="assets/logo_intra.jpg" alt="Intranet" class="card-img" />
-            <h2 class="label_txt">Intranet</h2>
-          </div>
-        </a>
+      <a href="https://e-rh-st-andre.kelio.io/open/login" target="_blank" class="card">
+        <img src="assets/kelio.png" alt="Badgeuse">
+        <h3>Badgeuse</h3>
+      </a>
 
-        <a href="https://e-rh-st-andre.kelio.io/open/login" title="Badgeuse">
-          <div class="card">
-            <img src="assets/kelio.png" alt="Badgeuse Kelio" class="card-img" />
-            <h2 class="label_txt">Badgeuse</h2>
-          </div>
-        </a>
+      <a href="http://intranet2.saint-andre.re/index.php/applications/" target="_blank" class="card">
+        <img src="assets/applications.png" alt="Applications">
+        <h3>Applications</h3>
+      </a>
+    </section>
+  </main>
 
-        <a href="http://intranet2.saint-andre.re/index.php/applications/" title="Applications">
-          <div class="card">
-            <img src="assets/applications.png" alt="Applications" class="card-img" />
-            <h2 class="label_txt">Applications</h2>
-          </div>
-        </a>
-      </div>
-    </div>
+  <div id="copyright">
+    Copyright © 2025 - Mairie de Saint-André
+  </div>
 
-    <div id="copyright">
-      <h2 id="copyright">Copyright © 2025 - Mairie de Saint-André</h2>
-    </div>
+  <!-- Ticker -->
+  <footer id="news-ticker" class="ticker">
+    <div id="ticker-content">Chargement des actualités...</div>
+  </footer>
 
-    <div id="news-ticker">
-      <div id="ticker-content">Chargement des actualités...</div>
-    </div>
-
-    <script src="ressources/script.js"></script>
-  </body>
+</body>
 </html>
