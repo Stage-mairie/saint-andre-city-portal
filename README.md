@@ -9,7 +9,8 @@ The portal is lightweight, fully static (HTML/CSS/JS), and styled with the **Man
 saint-andre-city-portal/
 │── assets/        # Logos, icons, and assets
 │── index.html     # Main entry point of the portal
-
+│── script.js
+│── style.css
 ```
 
 ## Features
