@@ -37,12 +37,6 @@ saint-andre-city-portal/
 - JavaScript (Vanilla) – News ticker, sidebar toggle, keyboard shortcuts
 - FontAwesome – Icons for applications and menu
 
-## Roadmap (Possible Enhancements)
-
-- [ ] Dark mode support
-- [ ] Multi-language support (French/English)
-- [ ] Integration with more municipal apps
-
 ## Authors
 
 - Bradley Malbrouck
