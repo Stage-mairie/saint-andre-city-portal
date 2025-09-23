@@ -1,16 +1,15 @@
 # Saint-André City Portal
 
 A modern and responsive city portal for **Saint-André**, providing centralized access to municipal services, applications, and news.  
-The portal is lightweight, fully static (HTML/CSS/JS), and styled with the **Manrope** font for readability.
+The portal is lightweight, fully static (HTML/CSS/JS).
 
 ## Project Structure
 
 ```
 saint-andre-city-portal/
 │── assets/        # Logos, icons, and assets
+│── src/           # CSS, JS and pdf
 │── index.html     # Main entry point of the portal
-│── script.js
-│── style.css
 ```
 
 ## Features
@@ -35,7 +34,6 @@ saint-andre-city-portal/
 - HTML5 – Structure of the portal
 - CSS3 – Layout, responsiveness, and animations
 - JavaScript (Vanilla) – News ticker, sidebar toggle, keyboard shortcuts
-- FontAwesome – Icons for applications and menu
 
 ## Authors
 
