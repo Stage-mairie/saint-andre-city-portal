@@ -253,22 +253,6 @@ main {
 }
 
 /* ===========================================
-   COPYRIGHT
-=========================================== */
-#copyright {
-  text-align: center;
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: #f1f5f9;
-  position: fixed;
-  bottom: 3.2rem;
-  left: 0;
-  width: 100%;
-  z-index: 500;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
-}
-
-/* ===========================================
    TICKER
 =========================================== */
 .ticker {
@@ -298,6 +282,37 @@ main {
 
 #ticker-content a:hover { color: #2563eb; }
 .ticker-label { font-weight: 600; color: #1e3a8a; margin-right: 0.5rem; }
+
+.help-text {
+    position: fixed;
+    bottom: 3.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+    color:  white; 
+    font-size: 0.9rem;
+    padding: 8px 14px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    z-index: 1;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#copyright {
+  position: fixed;
+  top: 75%;
+  left: 0;
+  transform: translateY(-50%) rotate(-90deg); /* rotation verticale */
+  transform-origin: left top;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: rgba(241, 245, 249, 0.4); /* plus discret */
+  z-index: 500;
+  text-shadow: none; /* enlever l’effet pour réduire la visibilité */
+  white-space: nowrap; /* éviter le retour à la ligne */
+}
+
 
 /* ===========================================
    RESPONSIVE LOGO

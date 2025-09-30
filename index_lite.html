@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="assets/favicon_standre.ico" type="image/x-icon">
+<title>Portail Ville de Saint-André</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #70c1d1;
+    color: #1e293b;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  header {
+    background: #5ea0d9;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  header img {
+    width: 200px; 
+    height: auto;
+    display: block;
+    margin: 0 auto 0.5rem;
+  }
+
+  header h1 { margin: 0; }
+  header p { margin: 0.3rem 0 0; }
+
+  .services {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    gap: 1.5rem; 
+  }
+
+  .card {
+    width: 200px;       
+    height: 220px;     
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: all 0.2s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  }
+
+  .card img {
+    width: 100px;       
+    height: 100px;     
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+  }
+  .card h3 { font-size: 1.2rem; margin: 0.5rem 0 0 0; }
+
+  .copyright {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.9rem;
+    color: rgba(0,0,0,0.6);
+    padding: 0.5rem 1rem;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <img src="assets/logo.png" alt="Logo Ville de Saint-André">
+  <h1>Ville de Saint-André</h1>
+  <p>Portail des services numériques</p>
+</header>
+
+<section class="services">
+  <a href="http://www.saint-andre.re/" target="_blank" class="card">
+    <img src="assets/logo.png" alt="Site de la ville">
+    <h3>Site de la ville</h3>
+  </a>
+
+  <a href="http://intranet2.saint-andre.re/" target="_blank" class="card">
+    <img src="assets/logo_intra.jpg" alt="Intranet">
+    <h3>Intranet</h3>
+  </a>
+
+  <a href="https://e-rh-st-andre.kelio.io/open/login" target="_blank" class="card">
+    <img src="assets/kelio.png" alt="Badgeuse">
+    <h3>Badgeuse</h3>
+  </a>
+
+  <a href="http://intranet2.saint-andre.re/index.php/applications/" target="_blank" class="card">
+    <img src="assets/applications.png" alt="Applications">
+    <h3>Applications</h3>
+  </a>
+</section>
+
+<div class="copyright">
+  Copyright © 2025 - Mairie de Saint-André
+</div>
+
+</body>
+</html>

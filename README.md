@@ -7,9 +7,10 @@ The portal is lightweight, fully static (HTML/CSS/JS).
 
 ```
 saint-andre-city-portal/
-│── assets/        # Logos, icons, and assets
-│── src/           # CSS, JS and pdf
-│── index.html     # Main entry point of the portal
+│── assets/ # Logos, icons, and assets
+│── src/ # CSS, JS and pdf
+│── index.html # Main entry point of the portal
+│── index_lite.html # Lightweight version for older computers and browsers
 ```
 
 ## Features
@@ -19,14 +20,16 @@ saint-andre-city-portal/
 - News Ticker – Automatically fetches and scrolls latest WordPress news
 - Sidebar Menu – Toggleable menu with application shortcuts
 - Keyboard Shortcut – Press K to directly open the Kelio app
+- Keyboard Shortcut – Press Z to directly open the Zimbra app
 - Modern UI – Clean design using aqua/blue theme, cards, and smooth transitions
+- **Lite Version** – `index_lite.html` for older computers or legacy browsers
 
 ## Getting Started
 
 1. Clone this repository:
    git clone https://github.com/<your-username>/saint-andre-city-portal.git
 
-2. Open index.html in your browser.  
+2. Open index.html or index_lite.html in your browser.  
    (No server or build step required — it’s a static site.)
 
 ## Technologies Used
