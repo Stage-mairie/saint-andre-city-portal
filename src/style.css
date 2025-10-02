@@ -300,6 +300,17 @@ main {
     white-space: nowrap;
 }
 
+.help-text a {
+    color: #00ffff; /* couleur claire et visible sur fond noir */
+    text-decoration: underline; /* pour signaler que c'est un lien */
+    font-weight: bold; /* optionnel, pour le rendre plus visible */
+}
+
+.help-text a:hover {
+    color: #ffcc00; /* couleur au survol */
+    text-decoration: none; /* style au survol */
+}
+
 #copyright {
   position: fixed;
   top: 75%;

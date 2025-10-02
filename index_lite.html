@@ -68,6 +68,33 @@
   }
   .card h3 { font-size: 1.2rem; margin: 0.5rem 0 0 0; }
 
+  .help-text {
+    position: fixed;
+    bottom: 3.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+    color: white; 
+    font-size: 0.9rem;
+    padding: 8px 14px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    z-index: 1;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .help-text a {
+    color: #00ffff;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  .help-text a:hover {
+    color: #ffcc00;
+    text-decoration: none;
+  }
+
   .copyright {
     position: fixed;
     bottom: 0;
@@ -109,6 +136,12 @@
     <h3>Applications</h3>
   </a>
 </section>
+
+<div class="help-text">
+  Si vous avez des problèmes pour vous connecter aux applications, 
+  même lorsque vous êtes connecté au réseau de la mairie, 
+  pensez à valider la charte en cliquant <a href="http://www.saint-andre.re/" target="_blank">ici</a>.
+</div>
 
 <div class="copyright">
   Copyright © 2025 - Mairie de Saint-André
